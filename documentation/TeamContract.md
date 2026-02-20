@@ -12,7 +12,7 @@ Darwin Zhang, Marco Wang, Tianhao Cao, Yusen Huang
 
 -   **The Scrum Lead (Rotation):** We will rotate the Scrum Lead role weekly.
 
-    -   *Responsibility:* Facilitate weekly Stand-ups, communicate with stakeholders, track team members status, and ensure the kanban board is up to date.
+    -   *Responsibility:* Facilitate weekly Stand-ups, communicate with stakeholders, track team members progress, and ensure the kanban board is up to date.
 
         Sprint 2 Lead: Darwin
 
@@ -41,6 +41,8 @@ Darwin Zhang, Marco Wang, Tianhao Cao, Yusen Huang
 -   **Weekly Sprint Meeting:** Monday at 4:00 PM via Zoom for Sprint Review/Planning.
 
 -   **Weekly Stakeholder Meeting:** Friday via zoom for presenting weekly progress with Stakeholders
+
+-   **Communication Channel:** Slacks
 
 -   **Documentation:** Documentation is done by Scrum Lead and will be stored in Github Repo. What to document: Weekly Meeting Agenda and minutes, daily stand-up content, updating all necessary logs.
 
