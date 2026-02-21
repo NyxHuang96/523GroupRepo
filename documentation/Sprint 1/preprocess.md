@@ -50,10 +50,10 @@ The script applies fundamental NLP text cleaning steps:
 - **Whitespace Normalization**: Multiple consecutive whitespace characters (such as multiple spaces, tabs, or newlines) are reduced down to a single space, and leading/trailing spaces are stripped out. This procedure uses Python's `re.sub(r"\s+", " ", str(x)).strip()` mapped across the dataset via an `apply()` function. ([re.sub](https://docs.python.org/3/library/re.html#re.sub))
 
 ### 8. Save the Processed Dataset
-Finally, the fully cleaned, deduplicated, and mapped DataFrame is saved out to `data/processed/corpus.csv` without writing the explicit pandas row indices, using `to_csv(index=False)`.
-- **Relevant documentation**: [pandas.DataFrame.to_csv](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_csv.html)
+Finally, the fully cleaned, deduplicated, and mapped DataFrame is saved out to `data/processed/corpus.json` without writing the explicit pandas row indices, using `to_json(index=False)`.
+- **Relevant documentation**: [pandas.DataFrame.to_json](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_json.html)
 
 ## Output
 Executing the `preprocess.py` script yields:
-- A standardized and clean CSV corpus file located at `data/processed/corpus.csv`.
+- A standardized and clean JSON corpus file located at `data/processed/corpus.json`.
 - Detailed console logs outlining the real-time progress of all preprocessing stages, the quantity of filtered missing/duplicate records, and a summary of the final categorical distributions (`Ham`, `Spam`, `Phish`) inside the mapped dataset.

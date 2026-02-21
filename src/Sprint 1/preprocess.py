@@ -2,8 +2,9 @@
 File: preprocess.py
 Author: Tianhao Cao
 Date: 2026-02-20
+Last Updated: 2026-02-21
 Course: COLX 523
-Description: Preprocess the Spam/Ham/Phish email dataset from data/raw/df.csv
+Description: Download data from kaggle through official APi, preprocess the Spam/Ham/Phish email dataset, and export to data/processed/corpus.json
 """
 
 import pandas as pd
@@ -20,7 +21,7 @@ def preprocess_dataset():
 
     processed_dir = script_dir.parent.parent / "data" / "processed"
     os.makedirs(processed_dir, exist_ok=True)
-    processed_data_path = processed_dir / "corpus.csv"
+    processed_data_path = processed_dir / "corpus.json"
 
     # Step 1: Define file paths
     # kagglehub documentation: https://github.com/Kaggle/kagglehub/blob/main/README.md#kaggledatasetadapterpandas
@@ -78,7 +79,7 @@ def preprocess_dataset():
     print("-" * 50)
     print(f"Saving processed data to: {processed_data_path}")
 
-    df.to_csv(processed_data_path, index=False)
+    df.to_json(processed_data_path, orient="records", lines=True)
     print(f"Final Dataset Shape: {df.shape}")
     print("-" * 50)
 
