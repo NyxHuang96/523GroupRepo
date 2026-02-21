@@ -102,10 +102,10 @@ Marco
 
 Tianhao
 
--   Communicative - communication is all about knowing what is expected for each sprint, and making sure that the team is progressing towards those goals
+-   Communicative - 5
 
--   Analytical - analysts take a larger view of the project, and plan around future needs of the team
+-   Analytical - 4
 
--   Creative - creators have lots of great ideas that can produce inspiration about where a project needs to go
+-   Creative - 5
 
--   Synergistic - Synergists can put together the different parts of a project to make something more than its parts. They work with people with other styles to create a cohesive whole. After analyzing your skillset, please discuss it with your teammates, and use this information to inform your project. Include the self reflection in the repo.
+-   Synergistic - 3
