@@ -1,3 +1,7 @@
+**Author:** Tianhao Cao  
+**Date:** 2026-02-20  
+**Course:** COLX 523
+
 # Useful Resources on fraud text:
 
 ## With text:
