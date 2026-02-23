@@ -4,24 +4,22 @@ Author: Tianhao Cao
 Date: 2026-02-20
 Last Updated: 2026-02-21
 Course: COLX 523
-Description: Download data from kaggle through official APi, preprocess the Spam/Ham/Phish email dataset, and export to data/processed/corpus.json
+Description: Download data from kaggle through official API, preprocess the Spam/Ham/Phish email dataset, and export to data/processed/kaggle_corpus.json
 """
 
 import pandas as pd
 import os
 import re
 from pathlib import Path
-import pandas as pd
 import kagglehub
 from kagglehub import KaggleDatasetAdapter
-
 
 def preprocess_dataset():
     script_dir = Path(__file__).resolve().parent
 
     processed_dir = script_dir.parent.parent / "data" / "processed"
     os.makedirs(processed_dir, exist_ok=True)
-    processed_data_path = processed_dir / "corpus.json"
+    processed_data_path = processed_dir / "kaggle_corpus.json"
 
     # Step 1: Define file paths
     # kagglehub documentation: https://github.com/Kaggle/kagglehub/blob/main/README.md#kaggledatasetadapterpandas
@@ -82,7 +80,6 @@ def preprocess_dataset():
     df.to_json(processed_data_path, orient="records", lines=True)
     print(f"Final Dataset Shape: {df.shape}")
     print("-" * 50)
-
 
 if __name__ == "__main__":
     preprocess_dataset()
