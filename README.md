@@ -12,21 +12,21 @@ Root
 │   └── source/
 │       └── resources.md
 ├── documentation/
-│   ├── Sprint 1/
+│   ├── 01_sprint/
 │   │   └── preprocess.md
-│   ├── Sprint 2/
-│   ├── Sprint 3/
-│   ├── Sprint 4/
-│   ├── Sprint 5/
+│   ├── 02_sprint/
+│   ├── 03_sprint/
+│   ├── 04_sprint/
+│   ├── 05_sprint/
 │   ├── Project Charter.md
 │   └── TeamContract.md
 ├── src/
-│   ├── Sprint 1/
+│   ├── 01_sprint/
 │   │   └── preprocess.py
-│   ├── Sprint 2/
-│   ├── Sprint 3/
-│   ├── Sprint 4/
-│   └── Sprint 5/
+│   ├── 02_sprint/
+│   ├── 03_sprint/
+│   ├── 04_sprint/
+│   └── 05_sprint/
 ├── .gitignore
 └── README.md
 ```
