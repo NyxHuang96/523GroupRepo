@@ -66,8 +66,6 @@ Every piece of work must meet these standards:
 
 ------------------------------------------------------------------------
 
-### 
-
 ### Self Reflection Rank
 
 #### Yusen
@@ -80,7 +78,17 @@ Every piece of work must meet these standards:
 
 -   Synergistic - 4.5
 
-Darwin
+#### Darwin
+
+-   Communicative - 4
+
+-   Analytical - 4
+
+-   Creative - 4
+
+-   Synergistic - 4
+
+#### Marco
 
 -   Communicative - communication is all about knowing what is expected for each sprint, and making sure that the team is progressing towards those goals
 
@@ -90,17 +98,7 @@ Darwin
 
 -   Synergistic - Synergists can put together the different parts of a project to make something more than its parts. They work with people with other styles to create a cohesive whole. After analyzing your skillset, please discuss it with your teammates, and use this information to inform your project. Include the self reflection in the repo.
 
-Marco
-
--   Communicative - communication is all about knowing what is expected for each sprint, and making sure that the team is progressing towards those goals
-
--   Analytical - analysts take a larger view of the project, and plan around future needs of the team
-
--   Creative - creators have lots of great ideas that can produce inspiration about where a project needs to go
-
--   Synergistic - Synergists can put together the different parts of a project to make something more than its parts. They work with people with other styles to create a cohesive whole. After analyzing your skillset, please discuss it with your teammates, and use this information to inform your project. Include the self reflection in the repo.
-
-Tianhao
+#### Tianhao
 
 -   Communicative - 5
 
