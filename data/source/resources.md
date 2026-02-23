@@ -26,7 +26,8 @@
 
 ### The Biggest Spam Ham Phish Email Dataset (250000+): https://www.kaggle.com/datasets/akshatsharma2/the-biggest-spam-ham-phish-email-dataset-300000
 
-* Description: This dataset is a large-scale, unified, and deduplicated collection of text messages and emails created for spam, ham, and phishing detection . It has been constructed by combining multiple publicly available and open-source datasets (which have been cited correctly) into a single standardized format, making it suitable for machine learning, deep learning, and NLP-based projects.
+* Description: This dataset is a large-scale, unified, and deduplicated collection of text messages and emails created for spam, ham, and phishing detection . It has been constructed by combining multiple publicly available and open-source datasets (which have been cited correctly) into a single standardized format, making it suitable for machine learning, deep learning, and NLP-based projects. Further iterations may include web scraped data including languages beyond English. 
+
 * Data Size: The dataset contains approximately 250,000+ samples, covering a diverse range of legitimate messages, unsolicited spam, and real-world phishing attempts.
     * 0 → Ham
     * 1 → Phish
