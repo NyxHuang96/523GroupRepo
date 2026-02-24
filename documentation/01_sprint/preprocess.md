@@ -55,5 +55,6 @@ Finally, the fully cleaned, deduplicated, and mapped DataFrame is saved out to `
 
 ## Output
 Executing the `preprocess.py` script yields:
+- A checkpoint CSV file located at `data/raw/raw_df_checkpoint.csv`.
 - A standardized and clean JSON corpus file located at `data/processed/corpus.json`.
 - Detailed console logs outlining the real-time progress of all preprocessing stages, the quantity of filtered missing/duplicate records, and a summary of the final categorical distributions (`Ham`, `Spam`, `Phish`) inside the mapped dataset.
