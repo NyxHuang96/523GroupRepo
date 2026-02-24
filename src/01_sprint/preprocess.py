@@ -14,31 +14,40 @@ from pathlib import Path
 import kagglehub
 from kagglehub import KaggleDatasetAdapter
 
+
 def preprocess_dataset():
     script_dir = Path(__file__).resolve().parent
 
     processed_dir = script_dir.parent.parent / "data" / "processed"
+    raw_dir = script_dir.parent.parent / "data" / "raw"
+
     os.makedirs(processed_dir, exist_ok=True)
+    os.makedirs(raw_dir, exist_ok=True)
+
     processed_data_path = processed_dir / "kaggle_corpus.json"
+    checkpoint_path = raw_dir / "raw_df_checkpoint.csv"
 
     # Step 1: Define file paths
-    # kagglehub documentation: https://github.com/Kaggle/kagglehub/blob/main/README.md#kaggledatasetadapterpandas
-    # Set the path to the file you'd like to load
-    file_path = "df.csv"
+    if checkpoint_path.exists():
+        print("-" * 50)
+        print(f"Found local checkpoint, loading from {checkpoint_path}...")
+        df = pd.read_csv(checkpoint_path)
+    else:
+        print("-" * 50)
+        print("No local checkpoint found, downloading data from Kaggle")
+        file_path = "df.csv"
 
-    # Load the latest version
-    df = kagglehub.load_dataset(
-        KaggleDatasetAdapter.PANDAS,
-        "akshatsharma2/the-biggest-spam-ham-phish-email-dataset-300000",
-        file_path,
-        # Provide any additional arguments like
-        # sql_query or pandas_kwargs. See the
-        # documenation for more information:
-        # https://github.com/Kaggle/kagglehub/blob/main/README.md#kaggledatasetadapterpandas
-    )
+        df = kagglehub.load_dataset(
+            KaggleDatasetAdapter.PANDAS,
+            "akshatsharma2/the-biggest-spam-ham-phish-email-dataset-300000",
+            file_path,
+        )
+
+        print(f"data loaded, saving to {checkpoint_path} ...")
+        df.to_csv(checkpoint_path, index=False)
 
     print("-" * 50)
-    print("First 5 records:", df.head())
+    print("First 5 records:\n", df.head())
 
     # Initial Inspection
     print("-" * 50)
@@ -80,6 +89,7 @@ def preprocess_dataset():
     df.to_json(processed_data_path, orient="records", lines=True)
     print(f"Final Dataset Shape: {df.shape}")
     print("-" * 50)
+
 
 if __name__ == "__main__":
     preprocess_dataset()
