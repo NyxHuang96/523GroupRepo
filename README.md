@@ -89,4 +89,12 @@ Primarily, this dataset will train classifiers to detect complex social engineer
 
 ---
 
+## References: 
+
+[Spotting malicious email messages, Government of Canada](https://www.cyber.gc.ca/en/guidance/spotting-malicious-email-messages-itsap00100)
+
+[Scam Warners - Public Forum](https://scamwarners.com/scam-message-examples)
+
+[Phishing Websites](https://archive.ics.uci.edu/dataset/327/phishing+websites)
+
 _Note: Project scope, specific targets, and annotation guidelines will be refined iteratively across the upcoming sprints. There may be edits or approaches beyond the proposal or listed text above. We will do our best to keep the README updated to the format of our project._
