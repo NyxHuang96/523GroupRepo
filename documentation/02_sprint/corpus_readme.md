@@ -1,0 +1,25 @@
+---
+title: "corpus_readme.md"
+author: "Yusen Huang"
+date: "2026-02-26"
+output: pdf_document
+---
+
+**Source Dataset:** <https://www.kaggle.com/datasets/akshatsharma2/the-biggest-spam-ham-phish-email-dataset-300000>
+
+**Processed Corpus:** <https://drive.google.com/drive/folders/1wv_PNSCYvKHw3lGeOHqk_go-D1LiEKft?usp=sharing>
+
+**Data Format:** JSON
+
+**Metadata:**
+
+| Field | Type | Description |
+|-------|--------|----------------------------------------------------------|
+| Label | String | The **classification metadata**. It categorizes the text into specific classes: `Ham` (legitimate), `Spam`, or `Phish`. |
+| Text | String | The **raw text**. This is the actual email or message content. |
+
+**Total Number of Documents:** 1 (So far)
+
+**Total Amount of Text (in tokens):** 72,609,542
+
+**Any Known Problem:** N/A
