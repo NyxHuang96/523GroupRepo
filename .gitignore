@@ -1,6 +1,4 @@
-# Ignore all data files
 data/raw/
 data/processed/
-# Ignore Mac system files
 .DS_Store
 venv/
