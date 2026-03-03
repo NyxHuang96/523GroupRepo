@@ -1,0 +1,35 @@
+---
+title: "Plan for the Interface"
+author: "Tianhao Cao"
+date: "2026-03-02"
+---
+
+## Overview
+This is a web interface for our spam detection model.
+
+## Features
+### Top Tool Bar
+- **Search**: Returns to the home page, where users can search for the full corpus text based on input keywords.
+- **Corpora**: Returns to the corpora page, the content will be the corpora information.
+- **Statistics**: Returns to the statistics page, the content will be the statistics of the corpora, such as the number of documents, the number of words, etc.
+- **About**: Returns to the about page, the content will be the information of our project and the team members.
+- **Login**: Allows users to register and log in.
+
+### Search Page
+![img preview](../../img/web/web_interface.png)
+
+- **Search Bar**: Users can enter keywords to search for relevant documents.
+- **Search annotated data only**: Users can check this box to search for annotated data only.
+- **Corpora**: Users can switch the result displays between Chinese and English corpora.
+- **Query Builder**: Users can build complex queries using the query builder.
+- **Recent Searches**: Users can view their recent searches.
+- **Search Options**: Users can select search options.
+    - **Corpus Selection**: Users can select the corpus to search in.
+    - **Metadata Filters (Genre, Date, Author)**: Users can filter the search results by metadata.
+    - **Concordance View**: Users can view the search results in concordance view.
+    - **Frequency List**: Users can view the frequency list of the search results.
+
+**Feature Explanation**
+The query builder is the main feature of the search page, where it returns the searched results in the middle of the page so that the user can easily view the results. Aside from search-related features, we also have other features such as corpora information, statistics, and about page, these pages provides a more thothrough understanding of the corpora to users. In the mean time, since we have two different corpora, Chinese and English, we need to have a way to distinguish between them, so we have a corpora selection feature that allows users to switch between the two corpora.
+
+
