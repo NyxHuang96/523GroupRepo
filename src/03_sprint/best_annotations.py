@@ -193,7 +193,7 @@ def merge_annotations(input_dir, output_file):
 
 if __name__ == "__main__":
     INPUT_DIR = "documentation/03_sprint/annotation"
-    OUTPUT_FILE = "documentation/03_sprint/annotation/annotations_best.jsonl"
+    OUTPUT_FILE = "documentation/03_sprint/annotation/final/annotations_best.jsonl"
     
     output_path = Path(OUTPUT_FILE).parent
     output_path.mkdir(parents=True, exist_ok=True)
