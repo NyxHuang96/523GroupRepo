@@ -30,7 +30,6 @@ You will be given a CSV (one row per message) with at least these columns:
 
 | Column | Who fills | Description |
 |---|---|---|
-| `id` | pre-filled | unique record id (do not change) |
 | `label` | pre-filled | 0=Ham, 1=Phish, 2=Spam (do not change) |
 | `text_masked` | pre-filled | text to annotate (do not change) |
 | `scenario` | you | required, choose exactly one from list below |
