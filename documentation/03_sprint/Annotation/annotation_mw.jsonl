@@ -6,7 +6,7 @@ Chinese:
     "text_zh": "Daren/Dave - 抱歉昨天没能把这个发出去。如有任何疑问，请致电联系我。- unitedsalt 8022.xls",
     "scenario": "FINANCE_TRADING",
     "tactic_primary": null,
-    "entities": "0:5:PERSON;8:12:PERSON;107:125:ATTACHMENT",
+    "entities": "0:5:PERSON;6:10:PERSON;42:61:ATTACHMENT",
     "notes": ""
   },
   {
@@ -15,7 +15,7 @@ Chinese:
     "text_zh": "在线续开处方 http rcyyv escapelong ollieffmng com 恐惧 前进缓慢 恐惧 停滞不前 每个人 更艰难 时间似乎 伟大的行动 思考",
     "scenario": "FRAUD_SOCIAL_ENGINEERING",
     "tactic_primary": "HELPFUL_SERVICE",
-    "entities": "27:61:URL",
+    "entities": "7:46:URL",
     "notes": "This is a pharmaceutical spam email advertising online prescription refills with a suspicious URL."
   },
   {
@@ -24,7 +24,7 @@ Chinese:
     "text_zh": "联合增长查找 http sww jescapenumberk net e 销售 isncdo 预选转义号码用户名 bill williams iii enron com",
     "scenario": "FRAUD_SOCIAL_ENGINEERING",
     "tactic_primary": "REWARD",
-    "entities": "16:43:URL;95:112:PERSON;113:118:ORG",
+    "entities": "7:36:URL;57:74:PERSON;75:84:ORG",
     "notes": "Spam message with suspicious link. Contains pre-selected user info referencing an Enron employee."
   },
   {
@@ -33,7 +33,7 @@ Chinese:
     "text_zh": "kenny joyce entanglinge6banglarayojoncom 一切理解理解爱 httpbgwinforgivenesscom 2008年8月7日星期四 093234 0800",
     "scenario": "FRAUD_SOCIAL_ENGINEERING",
     "tactic_primary": "HELPFUL_SERVICE",
-    "entities": "0:11:PERSON;12:40:EMAIL;79:102:URL;103:130:DATE",
+    "entities": "0:11:PERSON;12:40:EMAIL;49:72:URL;73:97:DATE",
     "notes": "Phishing email with obfuscated email and URL."
   },
   {
@@ -60,7 +60,7 @@ Chinese:
     "text_zh": "watcwq 想要便宜的手表 http litv nepel com",
     "scenario": "FRAUD_SOCIAL_ENGINEERING",
     "tactic_primary": "REWARD",
-    "entities": "24:43:URL",
+    "entities": "16:36:URL",
     "notes": "Phishing email advertising cheap counterfeit watches with suspicious URL."
   },
   {
@@ -69,7 +69,7 @@ Chinese:
     "text_zh": "如果您需要电脑软件，请访问我们的网站，我们或许能满足您的需求。此致，西格丽德",
     "scenario": "FRAUD_SOCIAL_ENGINEERING",
     "tactic_primary": "HELPFUL_SERVICE",
-    "entities": "90:96:PERSON",
+    "entities": "34:38:PERSON",
     "notes": "Spam advertising software sales. Signed by 'sigrid'."
   },
   {
@@ -78,7 +78,7 @@ Chinese:
     "text_zh": "tyson cameron harlandrankshieldsaeaweborg 在线商店购买复刻劳力士手表品牌意大利制造劳力士 65 140 高品质劳力士复刻手表 httphalmscapsiccom 2008 年 8 月 6 日星期三 132133 0200 圣诞节复刻手表",
     "scenario": "FRAUD_SOCIAL_ENGINEERING",
     "tactic_primary": "REWARD",
-    "entities": "0:13:PERSON;14:41:EMAIL;68:73:ORG;110:116:MONEY;152:170:URL;171:198:DATE",
+    "entities": "0:13:PERSON;14:41:EMAIL;50:53:ORG;66:72:MONEY;84:102:URL;103:131:DATE",
     "notes": "Phishing email selling counterfeit Rolex watches. 'rolex' is referenced as a brand/ORG."
   },
   {
@@ -87,7 +87,7 @@ Chinese:
     "text_zh": "如果此电子邮件未以网页形式显示，请点击此处。熊猫软件尊重您的隐私。如果您不想再收到此类邮件，请点击此处。© 熊猫软件 2004",
     "scenario": "IT_SYSTEM",
     "tactic_primary": "HELPFUL_SERVICE",
-    "entities": "66:80:ORG;176:190:ORG;191:195:DATE",
+    "entities": "22:26:ORG;54:58:ORG;59:63:DATE",
     "notes": "Appears to be a Panda Software promotional/notification email. Classified as IT_SYSTEM scenario due to software context."
   },
   {
@@ -96,7 +96,7 @@ Chinese:
     "text_zh": "alexis j tovar tovara1jackssfasuedu 密码已过期，请点击更新电子邮件帐户密码已过期，请点击更新电子邮件帐户 2018年12月1日星期六 231500 0000 电子邮件 josemonkeyorg",
     "scenario": "FRAUD_SOCIAL_ENGINEERING",
     "tactic_primary": "URGENCY",
-    "entities": "0:14:PERSON;15:35:EMAIL;124:148:DATE;156:170:EMAIL",
+    "entities": "0:14:PERSON;15:35:EMAIL;71:96:DATE;102:115:EMAIL",
     "notes": "Phishing email using a fake 'password expired' alert to create urgency. Contains obfuscated email addresses (tovara1jackssfasuedu and josemonkeyorg)."
   },
   {
@@ -114,7 +114,7 @@ Chinese:
     "text_zh": "根据您的要求，提供加州tw管道和竞争管道的历史输送量数据。",
     "scenario": "FINANCE_TRADING",
     "tactic_primary": null,
-    "entities": "25:35:LOCATION;59:61:ORG",
+    "entities": "9:11:LOCATION;11:13:ORG",
     "notes": "Internal business request for historical throughput data for the California market and Transwestern (tw) pipeline."
   },
   {
@@ -123,7 +123,7 @@ Chinese:
     "text_zh": "科尔·赫尔 jaysondebrislandrystephenjaygouldorg 给女士留下深刻印象 新工具 裤子 观看 呻吟 愉悦 更深 紧致 许多调查显示 女士更喜欢男人 巨大的男性生殖器 httpwillpaidcom 2008年8月7日星期四 223955 0100 顶级阴茎增大器 经证实的效果 100% 保证",
     "scenario": "FRAUD_SOCIAL_ENGINEERING",
     "tactic_primary": "REWARD",
-    "entities": "0:14:PERSON;15:35:EMAIL;124:148:DATE;156:170:EMAIL",
+    "entities": "0:5:PERSON;6:42:EMAIL;99:114:URL;115:139:DATE",
     "notes": ""
   },
     {
@@ -132,7 +132,7 @@ Chinese:
     "text_zh": "chmessomfuartekstilcomtr 邻居想发送问候 freepostcardonlinecom 获取消息 点击链接 httpfreepostcardonlinecom00be022d968088ae c 20052008 freepostcardonlinecom 2008 年 8 月 6 日星期三 115725 0700 问候",
     "scenario": "FRAUD_SOCIAL_ENGINEERING",
     "tactic_primary": "REWARD",
-    "entities": "0:24:EMAIL;100:143:URL;174:202:DATE",
+    "entities": "0:24:EMAIL;65:106:URL;140:169:DATE",
     "notes": "Phishing email masquerading as a neighbor's electronic greeting card. Uses social bait ('Reward') to encourage clicking a malicious link."
   },
   {
@@ -141,7 +141,7 @@ Chinese:
     "text_zh": "见附件 http www lawdbane com 我觉得他可能是 tis t 现在这一切都不重要了，父亲 哦，这很重要 好吧，父亲 mackechnie 停顿了一下",
     "scenario": "OTHER",
     "tactic_primary": "HELPFUL_SERVICE",
-    "entities": "11:32:URL",
+    "entities": "4:25:URL;67:77:PERSON",
     "notes": "Spam email with a suspicious URL. Contains garbled narrative text (Bayesian poisoning) to confuse spam filters."
   },
   {
@@ -150,7 +150,7 @@ Chinese:
     "text_zh": "http://bizarre.mainoemstore.com/?a=3107",
      "scenario": "OTHER",
     "tactic_primary": "REWARD",
-    "entities": "0:52:URL",
+    "entities": "0:39:URL",
     "notes": "Short spam message consisting only of a link to a suspicious software site (mainoemstore)."
   },
   {
@@ -159,7 +159,7 @@ Chinese:
     "text_zh": "附件是cartonajes estrella jaime的信用工作表，他想发送isda草稿，前景为antonio vergara，流程是发送联系信息，谢谢，veronica",
     "scenario": "FINANCE_TRADING",
     "tactic_primary": null,
-    "entities": "26:45:ORG;46:51:PERSON;65:69:ORG;88:103:PERSON;148:156:PERSON",
+    "entities": "3:22:ORG;23:28:PERSON;39:43:ORG;49:64:PERSON;78:86:PERSON",
     "notes": "Legitimate business coordination for an ISDA draft and credit worksheet involving Cartonajes Estrella. Mentions Antonio Vergara and Veronica. Corporate finance context."
   },
   {
@@ -168,7 +168,7 @@ Chinese:
     "text_zh": "观看专业视频、照片、数千个视频片段、知名色情明星的照片，尽情享受，点击 http tunic leasurehome com 描述 目标 女性 caviness 间质 mukden mantrap batik dying panel barnes ponder borg",
     "scenario": "FRAUD_SOCIAL_ENGINEERING",
     "tactic_primary": "REWARD",
-    "entities": "115:141:URL",
+    "entities": "36:62:URL",
     "notes": "Pornographic spam lure offering adult videos via a suspicious link. Tactic is REWARD as it offers sexual gratification."
   },
   {
@@ -186,7 +186,7 @@ Chinese:
     "text_zh": "全球首款经医生认可的壮阳药，今日即可在线订购，提升性欲，增大尺寸。周一退款保证，点击在线订购：http://escapenumberb.serouslywrong.com/n/saver",
     "scenario": "FRAUD_SOCIAL_ENGINEERING",
     "tactic_primary": "REWARD",
-    "entities": "138:182:URL",
+    "entities": "47:93:URL",
     "notes": "Pharmaceutical spam advertising male enhancement products via a suspicious link. Tactic is REWARD as it offers physical improvement."
   },
   {
@@ -195,7 +195,7 @@ Chinese:
     "text_zh": "josh cope dwsweetestthingsmsweetestthingscom zl line p sj har anv ua cy great pric bh es u rux cx p bcm har cfn jbl cy wdo ders processed free ship uac ping httpsawgathercom thu 07 aug 2008 154200 0200 josh cope",
     "scenario": "FRAUD_SOCIAL_ENGINEERING",
     "tactic_primary": "REWARD",
-    "entities": "0:9:PERSON;10:44:EMAIL;140:156:URL;157:185:DATE;186:195:PERSON",
+    "entities": "0:9:PERSON;10:44:EMAIL;157:173:URL;174:201:DATE;202:211:PERSON",
     "notes": "Phishing email using a 'free shipping' lure with a suspicious URL. Contains obfuscated name and email address."
   },
   {
@@ -204,7 +204,7 @@ Chinese:
     "text_zh": "esteban odell extraneousmj1studiocommercialcom 购买伟哥西地那非 50mg x 10 粒，每粒 600 美元 httppdgf6wbaylivefilestorecomy1pbhepqwk2gk79nrt7kkndjxtm7bgl7saxqsbf2zxefo50sguzzvdpt_ik1il2ypswwrwmdduni41vymvytkwindexhtml 2008 年 8 月 7 日星期四 200106 0900 购买伟哥 100mg x 90 粒，每粒 178 美元",
     "scenario": "FRAUD_SOCIAL_ENGINEERING",
     "tactic_primary": "REWARD",
-    "entities": "0:13:PERSON;14:46:EMAIL;84:90:MONEY;100:266:URL;267:295:DATE;258:304:MONEY",
+    "entities": "0:13:PERSON;14:46:EMAIL;71:77:MONEY;78:202:URL;203:232:DATE;254:260:MONEY",
     "notes": "Phishing email advertising pharmaceutical products (Viagra) with a malicious URL. Tactic is REWARD as it entices with physical improvement."
   },
   {
@@ -213,7 +213,7 @@ Chinese:
     "text_zh": "杰森·斯特恩 jasonijabloneccz 帕丽斯·希尔顿丑闻录像带下载 httptitchacominput1inputphp 2008年8月6日星期三 17:03:37 05:00 客户端",
     "scenario": "FRAUD_SOCIAL_ENGINEERING",
     "tactic_primary": "REWARD",
-    "entities": "0:11:PERSON;12:28:EMAIL;29:41:PERSON;64:91:URL;92:119:DATE",
+    "entities": "0:6:PERSON;7:23:EMAIL;24:31:PERSON;39:66:URL;67:94:DATE",
     "notes": "Phishing email advertising a Paris Hilton scandal tape via a suspicious link. Tactic is REWARD as it entices with celebrity gossip/pornography."
   },
   {
@@ -240,7 +240,7 @@ Chinese:
     "text_zh": "了解生活工作美国分析保护区鳍色氨酸应用糖解毒味觉喧嚣胡迪尼迫害伯特定义姐妹会婚姻阿塞拜疆乔利滕巴克卡里亚蒂德布洛克哭泣皇室尼布萨利西亚代理坎伯西耶纳",
     "scenario": "OTHER",
     "tactic_primary": "REWARD",
-    "entities": "15:18:LOCATION",
+    "entities": "6:8:LOCATION;40:44:LOCATION",
     "notes": "Garbled/randomized 'word salad' text used to bypass spam filters. Includes keywords like 'usa' as a geographic lure."
   },
 ]
