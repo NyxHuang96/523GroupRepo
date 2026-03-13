@@ -5,4 +5,4 @@ data/processed/
 .DS_Store
 venv/
 __pycache__/
-.pytest_cache/whoosh_index/
+.pytest_cache/
