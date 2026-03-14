@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const badgeHtml = item.is_annotated
                 ? '<span class="badge badge-annotated">✓ Annotated</span>'
                 : '<span class="badge">Raw Text</span>';
-                
+
             const labelBadge = `<span class="badge" style="background-color: #e2e3e5; margin-right: 8px;">${item.label.toUpperCase()}</span>`;
 
             html.push(`
@@ -83,18 +83,18 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
             const response = await fetch(`${API_BASE_URL}/stats`);
             if (!response.ok) return;
-            
+
             const stats = await response.json();
-            
+
             // Update counts in the UI
             updateStatElement('stat-total-docs', stats.total_docs);
             updateStatElement('stat-annotated-docs', stats.annotated_docs);
             updateStatElement('stat-raw-docs', stats.raw_docs);
-            
+
             updateStatElement('stat-label-ham', stats.labels?.ham || 0);
             updateStatElement('stat-label-spam', stats.labels?.spam || 0);
             updateStatElement('stat-label-phish', stats.labels?.phish || 0);
-            
+
         } catch (error) {
             console.error('Failed to fetch corpus stats:', error);
         }
@@ -114,16 +114,16 @@ document.addEventListener('DOMContentLoaded', () => {
     function createPillElement(text, onRemove) {
         const pill = document.createElement('div');
         pill.className = 'search-pill';
-        
+
         const textSpan = document.createElement('span');
         textSpan.textContent = text;
-        
+
         const closeBtn = document.createElement('span');
         closeBtn.className = 'remove-pill';
         closeBtn.innerHTML = '&times;';
         closeBtn.setAttribute('aria-label', 'Remove option');
         closeBtn.title = 'Remove';
-        
+
         closeBtn.addEventListener('click', (e) => {
             e.preventDefault();
             e.stopPropagation();
@@ -131,7 +131,7 @@ document.addEventListener('DOMContentLoaded', () => {
             renderSearchPills();
             queryInput.focus();
         });
-        
+
         pill.appendChild(textSpan);
         pill.appendChild(closeBtn);
         return pill;
@@ -140,7 +140,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function renderSearchPills() {
         if (!pillsContainer) return;
         pillsContainer.innerHTML = '';
-        
+
         if (currentMetadataFilter.value && currentMetadataFilter.text) {
             const pill = createPillElement(currentMetadataFilter.text, () => {
                 currentMetadataFilter = { text: '', value: '' };
@@ -148,7 +148,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
             pillsContainer.appendChild(pill);
         }
-        
+
         activeSearchOptions.forEach(optionText => {
             const pill = createPillElement(optionText, () => {
                 activeSearchOptions.delete(optionText);
@@ -174,13 +174,13 @@ document.addEventListener('DOMContentLoaded', () => {
         link.addEventListener('click', (e) => {
             e.preventDefault();
             const optionText = link.textContent.replace(/\s+/g, ' ').trim();
-            
+
             if (activeSearchOptions.has(optionText)) {
                 activeSearchOptions.delete(optionText);
             } else {
                 activeSearchOptions.add(optionText);
             }
-            
+
             renderSearchPills();
             queryInput.focus();
         });
