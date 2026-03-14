@@ -113,6 +113,38 @@ h1 {
     box-shadow: 0 0 0 3px var(--focus-ring);
 }
 
+.pills-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+.search-pill {
+    display: flex;
+    align-items: center;
+    background-color: #e3f2fd;
+    color: #0d47a1;
+    border-radius: 4px;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.search-pill .remove-pill {
+    margin-left: 0.5rem;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 1;
+    color: #1e88e5;
+}
+
+.search-pill .remove-pill:hover {
+    color: #0d47a1;
+}
+
 .search-icon {
     padding-left: 1rem;
     color: var(--text-muted);
@@ -125,6 +157,11 @@ h1 {
     font-size: 1.1rem;
     outline: none;
     font-family: inherit;
+    min-width: 0;
+}
+
+.pills-container:not(:empty) + #query-input {
+    padding-left: 0.5rem;
 }
 
 .search-btn {
