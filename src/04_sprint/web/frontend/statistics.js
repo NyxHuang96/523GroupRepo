@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     async function fetchStats(corpus = 'all') {
         try {
-            const url = new URL(`${window.location.origin}/search`);
+            const url = `${window.location.origin}/stats?corpus=${encodeURIComponent(corpus)}`;
             const res = await fetch(url);
             if (!res.ok) throw new Error(`HTTP ${res.status}`);
             latestData = await res.json();
