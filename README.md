@@ -9,8 +9,14 @@ Tags: `Fraud Analysis` | `AI Safety` | `Social Engineering` | `Multilingual NLP`
 ```
 Root
 ├── data/
-│   ├── preprocessed/
+│   ├── processed/
+│   │   ├── chinese_sub_corpus.json
+│   │   ├── chinese_sub_corpus_filtered.json
+│   │   ├── chinese_sub_corpus_translated_api.json
+│   │   ├── english_sub_corpus.json
+│   │   └── kaggle_corpus.json
 │   ├── raw/
+│   │   ├── raw_df_checkpoint.csv
 │   │   └── reddit_processed.jsonl
 │   └── source/
 │       └── resources.md
@@ -19,17 +25,89 @@ Root
 │   │   └── preprocess.md
 │   ├── 02_sprint/
 │   │   ├── Script Documentation/
+│   │   │   ├── corpus_stats.md
+│   │   │   ├── token_count.md
+│   │   │   └── website_scrape.md
 │   │   ├── annotation_plan.md
 │   │   ├── corpus_analysis.md
 │   │   ├── corpus_readme.md
 │   │   └── references.md
-│   └── TeamContract.md
+│   ├── 03_sprint/
+│   │   ├── Annotation_Final/
+│   │   ├── annotation/
+│   │   │   ├── final/
+│   │   │   │   └── annotations_best.jsonl
+│   │   │   ├── raw/
+│   │   │   │   └── cassie-annotations-return.xlsx
+│   │   │   ├── annotation_dz.csv
+│   │   │   ├── annotation_mw.jsonl
+│   │   │   ├── annotation_tc.json
+│   │   │   ├── annotation_tc.jsonl
+│   │   │   ├── annotation_yh.jsonl
+│   │   │   ├── cassie_gold.jsonl
+│   │   │   └── iaa_study.raw
+│   │   ├── annotation_explanation.md
+│   │   ├── annotation_tutorial.md
+│   │   ├── build_subcorpora.md
+│   │   ├── iaa_study.md
+│   │   └── web_interface.md
+│   ├── 05_sprint/
+│   │   └── tutorial.md
+│   └── team_contract.md
+├── img/
+│   └── web/
+│       └── web_interface.png
 ├── src/
+│   ├── 01_sprint/
+│   │   └── preprocess.py
 │   ├── 02_sprint/
-│   ├── __init__.py
-│   ├── preprocess.py
-│   ├── token_count.py
-│   └── website_scrape.py
+│   │   ├── corpus_stats.py
+│   │   ├── token_count.py
+│   │   └── website_scrape.py
+│   ├── 03_sprint/
+│   │   ├── best_annotations.py
+│   │   ├── build_subcorpora.py
+│   │   ├── convert_csv2json_annotators.py
+│   │   ├── convert_csv2jsonl.py
+│   │   ├── corpus_translation_google_api.ipynb
+│   │   ├── csv_annotations.py
+│   │   └── generate_iaa.py
+│   ├── 04_sprint/
+│   │   └── web/
+│   │       ├── backend/
+│   │       │   ├── corpus_data/
+│   │       │   │   ├── annotated/
+│   │       │   │   │   └── annotations_best.jsonl
+│   │       │   │   └── raw/
+│   │       │   │       ├── chinese_sub_corpus_translated_api.json
+│   │       │   │       └── english_sub_corpus.json
+│   │       │   ├── analyzers.py
+│   │       │   └── main.py
+│   │       ├── frontend/
+│   │       │   ├── img/
+│   │       │   │   ├── DarwinZhang.png
+│   │       │   │   ├── Full.jpg
+│   │       │   │   ├── MarcoWang.png
+│   │       │   │   ├── TianhaoCao.png
+│   │       │   │   └── YusenHuang.png
+│   │       │   ├── about.html
+│   │       │   ├── about.js
+│   │       │   ├── functions.html
+│   │       │   ├── index.html
+│   │       │   ├── script.js
+│   │       │   ├── statistics.html
+│   │       │   ├── statistics.js
+│   │       │   └── style.css
+│   │       ├── img/
+│   │       │   ├── DarwinZhang.png
+│   │       │   ├── MarcoWang.png
+│   │       │   ├── TianhaoCao.png
+│   │       │   └── YusenHuang.png
+│   │       ├── Dockerfile
+│   │       └── requirements.txt
+│   ├── 05_sprint/
+│   │   └── docker/
+│   └── __init__.py
 ├── tests/
 │   ├── __init__.py
 │   └── test_scrape.py
