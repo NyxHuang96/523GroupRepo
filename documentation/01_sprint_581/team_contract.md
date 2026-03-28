@@ -50,7 +50,9 @@ Darwin Zhang, Marco Wang, Tianhao Cao, Yusen Huang
 
 -   **Sprint Deadlines:** We operate in 1-week Sprints. All "Definition of Done" criteria must be met by Due day at 11:59 PM.
 
--   **Hackathons:** We will hold a 3-hour "Co-working/Pair Programming" session every Due day afternoon to tackle complex bugs together.
+-   **Hackathons:** We will hold a 3-hour "Co-working/Pair Programming" session every Due day afternoon to tackle complex bugs together. 
+
+(Edit on Hackathons: "Our style of working will attempt to solve the problems as early as possible. For bugs, instead of having a set 3-hour standard pair-programming session, we are expected to attempt to solve our problems. If we are unable to, we should be able to document and share with at least one other team member who is available to help. The change from this hackathon style is that we are not all collectively working on the bug at the same time, but we should learn to tackle bugs and provide sufficient technical communication towards another to help. Tackling bugs will be done closer to the deadline, and we should all be available towards helping with at least one session of debugging. If required, closer to the deadline, we may triage more group members if the bug cannot be solved well as we are able to consider with more to all of our group members." [Suggested by: Darwin Zhang])
 
 ### 5. Quality & Definition of Done (DoD)
 
