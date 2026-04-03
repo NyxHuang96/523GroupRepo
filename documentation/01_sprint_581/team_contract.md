@@ -24,6 +24,8 @@ Darwin Zhang, Marco Wang, Tianhao Cao, Yusen Huang
 
 -   **Code Review:** Whenever someone uploads the code, the Scrum Lead should review the code. If it is the Scrum Lead himself who uploads the code, the next week's Scrum Lead shall review the code of current Scrum Lead.
 
+(Edit on Code Review: "Some of the new features involves multiple script/documentation updates, in this case, every team member should review the code before push the branch into the main." [Suggested by: Tianhao Cao])
+
 ### 2. Time & Availability
 
 -   **Core Hours:** Everyone is expected to be online and responsive on Slack/Discord between **2:00 PM – 8:00 PM PST during weekday**, and between **2:00 PM - 11:59 PM on due day.**
@@ -46,11 +48,16 @@ Darwin Zhang, Marco Wang, Tianhao Cao, Yusen Huang
 
 -   **Documentation:** Documentation is done by Scrum Lead and will be stored in Github Repo. What to document: Weekly Meeting Agenda and minutes, daily stand-up content, updating all necessary logs.
 
+-   **Conflict Resolution & Merges:** When encountering Git merge conflicts, team members must be extra careful—do not blindly guess or overwrite another person's code. Proactively communicate with the author of the conflicting code over Slack to resolve it collaboratively and prevent accidental loss of work. Additionally, for any technical disagreements that cannot be resolved quickly, the current Scrum Lead will act as the tie-breaker to ensure the sprint keeps moving forward.
+(Edit on Conflict Resolution: "Emphasize on resolving merge conflicts collaboratively and introducing a tie-breaker rule for technical disagreements." [Suggested by: Marco Wang])
+
 ### 4. Style of Working
 
 -   **Sprint Deadlines:** We operate in 1-week Sprints. All "Definition of Done" criteria must be met by Due day at 11:59 PM.
 
--   **Hackathons:** We will hold a 3-hour "Co-working/Pair Programming" session every Due day afternoon to tackle complex bugs together.
+-   **Hackathons:** We will hold a 3-hour "Co-working/Pair Programming" session every Due day afternoon to tackle complex bugs together. 
+
+(Edit on Hackathons: "Our style of working will attempt to solve the problems as early as possible. For bugs, instead of having a set 3-hour standard pair-programming session, we are expected to attempt to solve our problems. If we are unable to, we should be able to document and share with at least one other team member who is available to help. The change from this hackathon style is that we are not all collectively working on the bug at the same time, but we should learn to tackle bugs and provide sufficient technical communication towards another to help. Tackling bugs will be done closer to the deadline, and we should all be available towards helping with at least one session of debugging. If required, closer to the deadline, we may triage more group members if the bug cannot be solved well as we are able to consider with more to all of our group members." [Suggested by: Darwin Zhang])
 
 ### 5. Quality & Definition of Done (DoD)
 
